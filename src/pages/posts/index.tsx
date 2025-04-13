@@ -2,14 +2,12 @@
 
 import { GetStaticProps, NextPage } from "next";
 
-// ✅ 投稿の型
 type Post = {
   id: number;
   title: string;
   date: string;
 };
 
-// ✅ propsの型
 type HomeProps = {
   allPostsData: Post[];
 };
