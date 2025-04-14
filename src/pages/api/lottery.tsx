@@ -10,7 +10,7 @@ const Lottery: NextPage = () => {
   const { data: lottery } = useSWR("/api/lottery", fetcher);
   return (
     <>
-      <p>おみくじ結果: {lottery?.result}</p>
+      <p>おみくじの結果: {lottery?.result}</p>
     </>
   );
 };
